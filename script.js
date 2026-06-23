@@ -49,7 +49,7 @@ function quickBook() {
     const msg = `Hello! I need a taxi booking.%0A%0A📍 From: ${from}%0A📍 To: ${to}%0A📅 Date: ${date}%0A%0APlease share the rate and confirm availability.`;
     
     // 🔴 APNA WHATSAPP NUMBER YAHAN DAALEIN (91 ke baad 10 digit)
-    const phoneNumber = '919876543210'; // ← Isko apne number se replace karein
+    const phoneNumber = '9359511778'; // ← Isko apne number se replace karein
     
     window.open(`https://wa.me/${phoneNumber}?text=${msg}`, '_blank');
 }
@@ -93,7 +93,7 @@ function submitBooking() {
     const text = `🙏 Hello Renukai Tours!%0A%0A👤 Name: ${name}%0A📞 Phone: ${phone}%0A%0A📍 From: ${from}%0A📍 To: ${to}%0A📅 Date: ${date}%0A👥 Passengers: ${persons}%0A🚗 Vehicle: ${vehicle}%0A%0A💬 Message: ${msg}%0A%0APlease confirm the booking.`;
     
     // 🔴 APNA WHATSAPP NUMBER YAHAN DAALEIN (91 ke baad 10 digit)
-    const phoneNumber = '919876543210'; // ← Isko apne number se replace karein
+    const phoneNumber = '9359511778'; // ← Isko apne number se replace karein
     
     window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
 }
