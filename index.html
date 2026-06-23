@@ -51,7 +51,6 @@
   --cream: #FFF8EE;
   --light: #FFF3E0;
  
-  /* Consistent spacing scale used everywhere */
   --sec-pad-y: 72px;
   --sec-pad-y-tab: 56px;
   --sec-pad-y-mob: 40px;
@@ -133,10 +132,13 @@ nav {
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
  
 /* ============================================
-   HERO
+   HERO - BACKGROUND IMAGE ADDED
 ============================================ */
 #hero {
-  background: linear-gradient(135deg, #1a0a00 0%, #3d1a00 40%, #6b2d00 100%);
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)), url('RenukaMata.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 86vh;
   display: flex; align-items: center;
   padding: 56px var(--sec-pad-x);
@@ -226,7 +228,7 @@ nav {
 .quick-bar-btn:hover { background: #333; }
  
 /* ============================================
-   SECTIONS — consistent spacing scale
+   SECTIONS
 ============================================ */
 section { padding: var(--sec-pad-y) var(--sec-pad-x); }
 .section-label { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--saffron); margin-bottom: 8px; }
@@ -517,11 +519,9 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
     --gap-md: 14px;
   }
  
-  /* Topbar: stack and center */
   .topbar { flex-direction: column; text-align: center; font-size: 12px; padding: 8px var(--sec-pad-x-mob); }
   .topbar a { margin-left: 10px; }
  
-  /* Navbar */
   nav { padding: 0 var(--sec-pad-x-mob); height: 64px; }
   .logo-text span:first-child { font-size: 15px; }
   .logo-text span:last-child { font-size: 10px; }
@@ -536,7 +536,6 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
   .nav-links.open a { font-size: 15px; display: block; }
   .nav-links.open .nav-cta { text-align: center; }
  
-  /* Hero */
   #hero { padding: 40px var(--sec-pad-x-mob) 36px; min-height: auto; }
   .hero-content { max-width: 100%; }
   .hero-pill { font-size: 11px; padding: 5px 12px; margin-bottom: 16px; }
@@ -548,25 +547,21 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
   .hero-tags { gap: 8px; }
   .tag { font-size: 11px; padding: 5px 12px; }
  
-  /* Quick book bar */
   .quick-bar { flex-direction: column; align-items: stretch; padding: 16px var(--sec-pad-x-mob); gap: 10px; }
   .quick-bar-label { text-align: center; margin-bottom: 2px; }
   .quick-bar select, .quick-bar input, .quick-bar-btn { width: 100%; min-width: 0; }
  
-  /* Sections */
   section { padding: var(--sec-pad-y-mob) var(--sec-pad-x-mob); }
   .sec-hdr { margin-bottom: 30px; }
   .section-title { font-size: clamp(22px, 6vw, 28px); }
   .section-sub { font-size: 14px; }
  
-  /* Grids: single column, consistent gap */
   .mandirs-grid, .routes-grid, .vehicles-grid, .pkg-grid, .why-grid-inner {
     grid-template-columns: 1fr;
     gap: var(--gap-md);
   }
   .why-grid-inner { margin-top: 24px; }
  
-  /* Cards */
   .mandir-img { height: 180px; }
   .route-card { padding: 18px; }
   .route-top { gap: 8px; }
@@ -575,27 +570,20 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
   .pkg-header { padding: 22px 20px 18px; }
   .pkg-body { padding: 18px 20px; }
  
-  /* Contact */
   .contact-wrap { gap: 28px; }
   .contact-card { padding: 16px; }
   .fg-row { grid-template-columns: 1fr; gap: 0; }
  
-  /* SEO block */
   .seo-text-block { padding: 32px var(--sec-pad-x-mob); }
   .seo-link { font-size: 12px; padding: 6px 14px; }
  
-  /* Footer */
   .footer-top { grid-template-columns: 1fr; gap: 32px; text-align: left; }
   .footer-brand p { max-width: 100%; }
   .footer-bottom { flex-direction: column; text-align: center; gap: 6px; }
  
-  /* WhatsApp float */
   .wa-float { width: 48px; height: 48px; font-size: 22px; bottom: 16px; right: 16px; }
 }
  
-/* ============================================
-   RESPONSIVE — SMALL MOBILE (≤380px)
-============================================ */
 @media (max-width: 380px) {
   .hero-content h1 { font-size: 24px; }
   .btn-call, .btn-wa { font-size: 12px; padding: 12px 14px; }
@@ -609,8 +597,8 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
 <div class="topbar">
   <span><i class="fas fa-map-marker-alt"></i> Mahurgad, Nanded District, Maharashtra</span>
   <span>
-    <a href="tel:+91XXXXXXXXXX"><i class="fas fa-phone"></i> +91 XXXXX XXXXX</a>
-    <a href="https://wa.me/91XXXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="tel:+919876543210"><i class="fas fa-phone"></i> +91 98765 43210</a>
+    <a href="https://wa.me/919876543210" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
   </span>
 </div>
 
@@ -649,8 +637,8 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
       safe and comfortable AC / Non-AC vehicles available 24 hours a day.
     </p>
     <div class="hero-btns">
-      <a href="tel:+91XXXXXXXXXX" class="btn-call"><i class="fas fa-phone"></i> Call Now</a>
-      <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20a%20taxi%20from%20Mahurgad" class="btn-wa" target="_blank">
+      <a href="tel:+919876543210" class="btn-call"><i class="fas fa-phone"></i> Call Now</a>
+      <a href="https://wa.me/919876543210?text=I%20want%20to%20book%20a%20taxi%20from%20Mahurgad" class="btn-wa" target="_blank">
         <i class="fab fa-whatsapp"></i> WhatsApp Book
       </a>
     </div>
@@ -706,7 +694,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <p class="mandir-desc">The ancient temple of Kuldevta Shri Renuka Mata at Mahurgad. Millions of devotees from Maharashtra, Telangana and Karnataka visit here for darshan.</p>
         <div class="mandir-footer">
           <span class="mandir-dist">🚗 Mahurgad hilltop</span>
-          <a href="https://wa.me/91XXXXXXXXXX?text=I%20need%20a%20taxi%20for%20Renuka%20Mata%20Mandir%20darshan" class="taxi-link" target="_blank">
+          <a href="https://wa.me/919876543210?text=I%20need%20a%20taxi%20for%20Renuka%20Mata%20Mandir%20darshan" class="taxi-link" target="_blank">
             <i class="fas fa-car"></i> Book Taxi
           </a>
         </div>
@@ -728,7 +716,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <p class="mandir-desc">The Dattatray Mandir is the second most important religious site in Mahurgad. Devotees visiting Renuka Mata also pay their respects here.</p>
         <div class="mandir-footer">
           <span class="mandir-dist">🚶 Walking from Renuka Mata</span>
-          <a href="https://wa.me/91XXXXXXXXXX?text=I%20need%20a%20taxi%20for%20Dattatray%20Mandir%20darshan" class="taxi-link" target="_blank">
+          <a href="https://wa.me/919876543210?text=I%20need%20a%20taxi%20for%20Dattatray%20Mandir%20darshan" class="taxi-link" target="_blank">
             <i class="fas fa-car"></i> Book Taxi
           </a>
         </div>
@@ -750,7 +738,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <p class="mandir-desc">Shri Anusaya Mata Mandir is another revered religious site in Mahurgad. Pilgrims include this temple in their darshan itinerary along with Renuka Mata.</p>
         <div class="mandir-footer">
           <span class="mandir-dist">🚶 Walking from Renuka Mata</span>
-          <a href="https://wa.me/91XXXXXXXXXX?text=I%20need%20a%20taxi%20for%20Anusaya%20Mata%20Mandir%20darshan" class="taxi-link" target="_blank">
+          <a href="https://wa.me/919876543210?text=I%20need%20a%20taxi%20for%20Anusaya%20Mata%20Mandir%20darshan" class="taxi-link" target="_blank">
             <i class="fas fa-car"></i> Book Taxi
           </a>
         </div>
@@ -772,7 +760,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <p class="mandir-desc">The sacred Takht of the Sikhs — Sachkhand Sri Hazur Sahib. Our reliable taxi service from Mahurgad to Nanded is available at all times.</p>
         <div class="mandir-footer">
           <span class="mandir-dist">🚗 ~65 km from Mahurgad</span>
-          <a href="https://wa.me/91XXXXXXXXXX?text=I%20need%20a%20taxi%20from%20Mahurgad%20to%20Nanded%20Gurudwara" class="taxi-link" target="_blank">
+          <a href="https://wa.me/919876543210?text=I%20need%20a%20taxi%20from%20Mahurgad%20to%20Nanded%20Gurudwara" class="taxi-link" target="_blank">
             <i class="fas fa-car"></i> Book Taxi
           </a>
         </div>
@@ -802,7 +790,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <span><i class="fas fa-clock"></i> ~1.5 hrs</span>
       </div>
       <div class="route-price">₹ --- <small>/ vehicle (update required)</small></div>
-      <a href="https://wa.me/91XXXXXXXXXX?text=Please%20tell%20me%20the%20Mahurgad%20to%20Nanded%20taxi%20rate" class="route-book" target="_blank">
+      <a href="https://wa.me/919876543210?text=Please%20tell%20me%20the%20Mahurgad%20to%20Nanded%20taxi%20rate" class="route-book" target="_blank">
         <i class="fab fa-whatsapp"></i> Ask Rate & Book
       </a>
     </div>
@@ -818,7 +806,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <span><i class="fas fa-clock"></i> ~1 hr</span>
       </div>
       <div class="route-price">₹ --- <small>/ vehicle (update required)</small></div>
-      <a href="https://wa.me/91XXXXXXXXXX?text=Please%20tell%20me%20the%20Mahurgad%20to%20Kinwat%20taxi%20rate" class="route-book" target="_blank">
+      <a href="https://wa.me/919876543210?text=Please%20tell%20me%20the%20Mahurgad%20to%20Kinwat%20taxi%20rate" class="route-book" target="_blank">
         <i class="fab fa-whatsapp"></i> Ask Rate & Book
       </a>
     </div>
@@ -834,7 +822,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <span><i class="fas fa-train"></i> Station Pickup</span>
       </div>
       <div class="route-price">₹ --- <small>/ vehicle (update required)</small></div>
-      <a href="https://wa.me/91XXXXXXXXXX?text=I%20need%20a%20taxi%20pickup%20from%20Kinwat%20Station%20to%20Mahurgad" class="route-book" target="_blank">
+      <a href="https://wa.me/919876543210?text=I%20need%20a%20taxi%20pickup%20from%20Kinwat%20Station%20to%20Mahurgad" class="route-book" target="_blank">
         <i class="fab fa-whatsapp"></i> Book Station Pickup
       </a>
     </div>
@@ -850,7 +838,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <span><i class="fas fa-clock"></i> ~4 hrs</span>
       </div>
       <div class="route-price">₹ --- <small>/ vehicle (update required)</small></div>
-      <a href="https://wa.me/91XXXXXXXXXX?text=Please%20tell%20me%20the%20Mahurgad%20to%20Hyderabad%20taxi%20rate" class="route-book" target="_blank">
+      <a href="https://wa.me/919876543210?text=Please%20tell%20me%20the%20Mahurgad%20to%20Hyderabad%20taxi%20rate" class="route-book" target="_blank">
         <i class="fab fa-whatsapp"></i> Ask Rate & Book
       </a>
     </div>
@@ -866,7 +854,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <span><i class="fas fa-clock"></i> ~5 hrs</span>
       </div>
       <div class="route-price">₹ --- <small>/ vehicle (update required)</small></div>
-      <a href="https://wa.me/91XXXXXXXXXX?text=Please%20tell%20me%20the%20Mahurgad%20to%20Aurangabad%20taxi%20rate" class="route-book" target="_blank">
+      <a href="https://wa.me/919876543210?text=Please%20tell%20me%20the%20Mahurgad%20to%20Aurangabad%20taxi%20rate" class="route-book" target="_blank">
         <i class="fab fa-whatsapp"></i> Ask Rate & Book
       </a>
     </div>
@@ -882,7 +870,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <span><i class="fas fa-phone"></i> Call for rate</span>
       </div>
       <div class="route-price">Custom <small>rate</small></div>
-      <a href="https://wa.me/91XXXXXXXXXX?text=I%20need%20a%20taxi%20for%20a%20custom%20route" class="route-book" target="_blank">
+      <a href="https://wa.me/919876543210?text=I%20need%20a%20taxi%20for%20a%20custom%20route" class="route-book" target="_blank">
         <i class="fab fa-whatsapp"></i> Make Custom Booking
       </a>
     </div>
@@ -995,7 +983,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
             <div class="pkg-price-label">Starting from</div>
             <div class="pkg-price-amt">₹ --- <small>/ vehicle</small></div>
           </div>
-          <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20Mahurgad%20Darshan%20Package" class="pkg-book" target="_blank">
+          <a href="https://wa.me/919876543210?text=I%20want%20to%20book%20Mahurgad%20Darshan%20Package" class="pkg-book" target="_blank">
             <i class="fab fa-whatsapp"></i> Book
           </a>
         </div>
@@ -1022,7 +1010,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
             <div class="pkg-price-label">Starting from</div>
             <div class="pkg-price-amt">₹ --- <small>/ vehicle</small></div>
           </div>
-          <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20Mahurgad%20Nanded%20package" class="pkg-book" target="_blank">
+          <a href="https://wa.me/919876543210?text=I%20want%20to%20book%20Mahurgad%20Nanded%20package" class="pkg-book" target="_blank">
             <i class="fab fa-whatsapp"></i> Book
           </a>
         </div>
@@ -1049,7 +1037,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
             <div class="pkg-price-label">Starting from</div>
             <div class="pkg-price-amt">₹ --- <small>/ vehicle</small></div>
           </div>
-          <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20Kinwat%20tour%20package" class="pkg-book" target="_blank">
+          <a href="https://wa.me/919876543210?text=I%20want%20to%20book%20Kinwat%20tour%20package" class="pkg-book" target="_blank">
             <i class="fab fa-whatsapp"></i> Book
           </a>
         </div>
@@ -1112,8 +1100,8 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
         <div class="cc-icon"><i class="fas fa-phone"></i></div>
         <div class="cc-text">
           <h4>Call / WhatsApp</h4>
-          <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a><br/>
-          <small style="color:#999">Add your number here</small>
+          <a href="tel:+919876543210">+91 98765 43210</a><br/>
+          <small style="color:#999">Update with your number</small>
         </div>
       </div>
       <div class="contact-card">
@@ -1241,7 +1229,7 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
       <div class="footer-social">
         <a href="#" class="fsoc"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="fsoc"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/91XXXXXXXXXX" class="fsoc" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://wa.me/919876543210" class="fsoc" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
     <div class="footer-col">
@@ -1272,38 +1260,14 @@ footer { background: #1A0A00; color: rgba(255,255,255,0.65); padding: 50px var(-
 </footer>
 
 <!-- WhatsApp Float Button -->
-<a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20book%20a%20taxi%20from%20Mahurgad" class="wa-float" target="_blank">
+<a href="https://wa.me/919876543210?text=I%20want%20to%20book%20a%20taxi%20from%20Mahurgad" class="wa-float" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<script>
-  function toggleMenu() {
-    document.getElementById('navLinks').classList.toggle('open');
-  }
-  document.querySelectorAll('.nav-links a').forEach(l => {
-    l.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
-  });
+<!-- ============================================ -->
+<!-- JAVASCRIPT - EXTERNAL FILE LINK -->
+<!-- ============================================ -->
+<script src="script.js"></script>
 
-  function quickBook() {
-    const from = document.getElementById('qFrom').value;
-    const to = document.getElementById('qTo').value;
-    const date = document.getElementById('qDate').value || 'Date to be confirmed';
-    const msg = `Hello! I need a taxi booking.%0A%0A📍 From: ${from}%0A📍 To: ${to}%0A📅 Date: ${date}%0A%0APlease share the rate.`;
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${msg}`, '_blank');
-  }
-
-  function submitBooking() {
-    const name = document.getElementById('cName').value || 'N/A';
-    const phone = document.getElementById('cPhone').value || 'N/A';
-    const from = document.getElementById('cFrom').value;
-    const to = document.getElementById('cTo').value;
-    const date = document.getElementById('cDate').value || 'N/A';
-    const persons = document.getElementById('cPersons').value || 'N/A';
-    const vehicle = document.getElementById('cVehicle').value;
-    const msg = document.getElementById('cMsg').value || '';
-    const text = `🙏 Hello Renukai Tours!%0A%0A👤 Name: ${name}%0A📞 Phone: ${phone}%0A%0A📍 From: ${from}%0A📍 To: ${to}%0A📅 Date: ${date}%0A👥 Passengers: ${persons}%0A🚗 Vehicle: ${vehicle}%0A%0A💬 Message: ${msg}%0A%0APlease confirm the booking.`;
-    window.open(`https://wa.me/91XXXXXXXXXX?text=${text}`, '_blank');
-  }
-</script>
 </body>
 </html>
