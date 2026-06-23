@@ -8,8 +8,8 @@ h1 {
     color: blue;
 } */
 .mandir-photo {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   object-position: center;
   display: block;
