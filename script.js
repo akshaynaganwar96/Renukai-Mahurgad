@@ -1,5 +1,5 @@
 // ============================================
-// RENUKAI TOURS - MAIN JAVASCRIPT
+// RENUKA MATA TOURS - MAIN JAVASCRIPT
 // ============================================
 
 // ============================================
@@ -90,7 +90,7 @@ function submitBooking() {
     showToast('✅ Booking request sent successfully! We will reply within 15 minutes.', 'success');
     
     // WhatsApp message
-    const text = `🙏 Hello Renukai Tours!%0A%0A👤 Name: ${name}%0A📞 Phone: ${phone}%0A%0A📍 From: ${from}%0A📍 To: ${to}%0A📅 Date: ${date}%0A👥 Passengers: ${persons}%0A🚗 Vehicle: ${vehicle}%0A%0A💬 Message: ${msg}%0A%0APlease confirm the booking.`;
+    const text = `🙏 Hello Renuka Mata Tours!%0A%0A👤 Name: ${name}%0A📞 Phone: ${phone}%0A%0A📍 From: ${from}%0A📍 To: ${to}%0A📅 Date: ${date}%0A👥 Passengers: ${persons}%0A🚗 Vehicle: ${vehicle}%0A%0A💬 Message: ${msg}%0A%0APlease confirm the booking.`;
     
     // 🔴 APNA WHATSAPP NUMBER YAHAN DAALEIN (91 ke baad 10 digit)
     const phoneNumber = '9359511778'; // ← Isko apne number se replace karein
@@ -260,5 +260,5 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-console.log('🚀 Renukai Tours - Website Loaded Successfully!');
+console.log('🚀 Renuka Mata Tours - Website Loaded Successfully!');
 console.log('📞 WhatsApp Number: 919876543210 (Update this in script.js)');
